@@ -10,9 +10,15 @@
 		7FB8288226BA4B460022983F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8288126BA4B460022983F /* AppDelegate.swift */; };
 		7FB8288426BA4B460022983F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8288326BA4B460022983F /* SceneDelegate.swift */; };
 		7FB8288626BA4B460022983F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8288526BA4B460022983F /* ViewController.swift */; };
-		7FB8288926BA4B460022983F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB8288726BA4B460022983F /* Main.storyboard */; };
 		7FB8288B26BA4B490022983F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB8288A26BA4B490022983F /* Assets.xcassets */; };
-		7FB8288E26BA4B490022983F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB8288C26BA4B490022983F /* LaunchScreen.storyboard */; };
+		7FB8289626BA4C4C0022983F /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8289526BA4C4C0022983F /* MusicManager.swift */; };
+		7FB8289926BA4D6D0022983F /* GeniusApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8289826BA4D6D0022983F /* GeniusApiManager.swift */; };
+		7FB8289D26BA4F0B0022983F /* SongPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8289C26BA4F0B0022983F /* SongPreview.swift */; };
+		7FB8289F26BA4F1F0022983F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB8289E26BA4F1F0022983F /* Song.swift */; };
+		7FB828A126BA4F400022983F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A026BA4F400022983F /* SearchResult.swift */; };
+		7FB828A326BA4F630022983F /* ArtistPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A226BA4F630022983F /* ArtistPreview.swift */; };
+		7FB828A526BA4F750022983F /* AlbumPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A426BA4F750022983F /* AlbumPreview.swift */; };
+		7FB828A726BA51370022983F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A626BA51370022983F /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +26,16 @@
 		7FB8288126BA4B460022983F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB8288326BA4B460022983F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7FB8288526BA4B460022983F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7FB8288826BA4B460022983F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FB8288A26BA4B490022983F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7FB8288D26BA4B490022983F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FB8288F26BA4B490022983F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB8289526BA4C4C0022983F /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		7FB8289826BA4D6D0022983F /* GeniusApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusApiManager.swift; sourceTree = "<group>"; };
+		7FB8289C26BA4F0B0022983F /* SongPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPreview.swift; sourceTree = "<group>"; };
+		7FB8289E26BA4F1F0022983F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		7FB828A026BA4F400022983F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		7FB828A226BA4F630022983F /* ArtistPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPreview.swift; sourceTree = "<group>"; };
+		7FB828A426BA4F750022983F /* AlbumPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPreview.swift; sourceTree = "<group>"; };
+		7FB828A626BA51370022983F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		7FB8288026BA4B460022983F /* SongExplorerUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				7FB8289726BA4C8A0022983F /* Utilities */,
+				7FB8289B26BA4EA20022983F /* Model */,
 				7FB8288126BA4B460022983F /* AppDelegate.swift */,
 				7FB8288326BA4B460022983F /* SceneDelegate.swift */,
 				7FB8288526BA4B460022983F /* ViewController.swift */,
-				7FB8288726BA4B460022983F /* Main.storyboard */,
 				7FB8288A26BA4B490022983F /* Assets.xcassets */,
-				7FB8288C26BA4B490022983F /* LaunchScreen.storyboard */,
 				7FB8288F26BA4B490022983F /* Info.plist */,
 			);
 			path = SongExplorerUIKit;
+			sourceTree = "<group>";
+		};
+		7FB8289726BA4C8A0022983F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7FB8289A26BA4D800022983F /* Manager */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7FB8289A26BA4D800022983F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7FB8289826BA4D6D0022983F /* GeniusApiManager.swift */,
+				7FB8289526BA4C4C0022983F /* MusicManager.swift */,
+				7FB828A626BA51370022983F /* Token.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7FB8289B26BA4EA20022983F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FB8289E26BA4F1F0022983F /* Song.swift */,
+				7FB8289C26BA4F0B0022983F /* SongPreview.swift */,
+				7FB828A026BA4F400022983F /* SearchResult.swift */,
+				7FB828A226BA4F630022983F /* ArtistPreview.swift */,
+				7FB828A426BA4F750022983F /* AlbumPreview.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB8288E26BA4B490022983F /* LaunchScreen.storyboard in Resources */,
 				7FB8288B26BA4B490022983F /* Assets.xcassets in Resources */,
-				7FB8288926BA4B460022983F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,32 +177,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB8289F26BA4F1F0022983F /* Song.swift in Sources */,
 				7FB8288626BA4B460022983F /* ViewController.swift in Sources */,
+				7FB828A126BA4F400022983F /* SearchResult.swift in Sources */,
 				7FB8288226BA4B460022983F /* AppDelegate.swift in Sources */,
+				7FB8289926BA4D6D0022983F /* GeniusApiManager.swift in Sources */,
 				7FB8288426BA4B460022983F /* SceneDelegate.swift in Sources */,
+				7FB828A326BA4F630022983F /* ArtistPreview.swift in Sources */,
+				7FB828A726BA51370022983F /* Token.swift in Sources */,
+				7FB8289626BA4C4C0022983F /* MusicManager.swift in Sources */,
+				7FB828A526BA4F750022983F /* AlbumPreview.swift in Sources */,
+				7FB8289D26BA4F0B0022983F /* SongPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7FB8288726BA4B460022983F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FB8288826BA4B460022983F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7FB8288C26BA4B490022983F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FB8288D26BA4B490022983F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7FB8289026BA4B490022983F /* Debug */ = {
