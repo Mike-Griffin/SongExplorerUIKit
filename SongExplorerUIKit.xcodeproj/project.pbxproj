@@ -19,6 +19,7 @@
 		7FB828A326BA4F630022983F /* ArtistPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A226BA4F630022983F /* ArtistPreview.swift */; };
 		7FB828A526BA4F750022983F /* AlbumPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A426BA4F750022983F /* AlbumPreview.swift */; };
 		7FB828A726BA51370022983F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A626BA51370022983F /* Token.swift */; };
+		7FB828A926BA5A780022983F /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB828A826BA5A780022983F /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7FB828A226BA4F630022983F /* ArtistPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPreview.swift; sourceTree = "<group>"; };
 		7FB828A426BA4F750022983F /* AlbumPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPreview.swift; sourceTree = "<group>"; };
 		7FB828A626BA51370022983F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		7FB828A826BA5A780022983F /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				7FB8289A26BA4D800022983F /* Manager */,
+				7FB828A826BA5A780022983F /* CustomError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				7FB828A126BA4F400022983F /* SearchResult.swift in Sources */,
 				7FB8288226BA4B460022983F /* AppDelegate.swift in Sources */,
 				7FB8289926BA4D6D0022983F /* GeniusApiManager.swift in Sources */,
+				7FB828A926BA5A780022983F /* CustomError.swift in Sources */,
 				7FB8288426BA4B460022983F /* SceneDelegate.swift in Sources */,
 				7FB828A326BA4F630022983F /* ArtistPreview.swift in Sources */,
 				7FB828A726BA51370022983F /* Token.swift in Sources */,
