@@ -11,9 +11,6 @@ struct SongPreview: Codable, Equatable, Identifiable, Hashable {
     static func == (lhs: SongPreview, rhs: SongPreview) -> Bool {
         return lhs.id == rhs.id
     }
-    // certainly has some flaws but also I'm just trying to be able to search
-    // for Kanye West
-    var censoredTitle: String { return title.replacingOccurrences(of: "Nigg", with: "N***") }
     let title: String
     let artist: ArtistPreview
     // might want this to be a URL instead of String
