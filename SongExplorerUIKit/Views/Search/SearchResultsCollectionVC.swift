@@ -16,12 +16,14 @@ class SearchResultsCollectionVC: UICollectionViewController, UICollectionViewDel
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(results[indexPath.item].censoredTitle)
+        let songVC = SongDetailViewController(song:results[indexPath.item])
+        navigationController?.pushViewController(songVC, animated: true)
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellId.cellId, for: indexPath) as? SearchResultCell {
             cell.backgroundColor = .systemPink
+            cell.titleLabel.text = results[indexPath.item].censoredTitle
             return cell
         } else {
             fatalError("Failed to dequeue as Search Result Cell")
