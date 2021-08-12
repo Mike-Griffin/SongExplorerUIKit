@@ -15,6 +15,11 @@ class SongDetailViewController: UIViewController {
         return label
     }()
     
+    let artistNameLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
     init(song: SongPreview) {
         self.song = song
         super.init(nibName: nil, bundle: nil)
@@ -33,14 +38,22 @@ class SongDetailViewController: UIViewController {
     func updateUI() {
         view.backgroundColor = .white
         label.text = song.censoredTitle
+        artistNameLabel.text = "By: \(song.artist.name)"
     }
     
     func addSubviews() {
         view.addSubview(label)
+        view.addSubview(artistNameLabel)
     }
     
     func configureConstraints() {
         label.anchorCenter(centerX: view.safeAreaLayoutGuide.centerXAnchor,
                            centerY: view.safeAreaLayoutGuide.centerYAnchor)
+        artistNameLabel.anchor(top: label.bottomAnchor,
+                               leading: view.safeAreaLayoutGuide.leadingAnchor,
+                               bottom: nil,
+                               trailing: view.safeAreaLayoutGuide.trailingAnchor,
+                               padding: UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16),
+                               size: CGSize(width: 0, height: 40))
     }
 }
